@@ -1,4 +1,4 @@
-package oop1;
+package oop;
 
 public class MusicPlayer {
     int volume = 0;
