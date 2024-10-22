@@ -3,11 +3,11 @@ package access;
 public class Speaker {
     private int volume;
 
-    Speaker(int volume) {
+    public Speaker(int volume) {
         this.volume = volume;
     }
 
-    void volumeUp() {
+    public void volumeUp() {
         if(volume >= 100) {
             System.out.println("최대 음향");
         }
@@ -17,7 +17,7 @@ public class Speaker {
         }
     }
 
-    void volumeDown() {
+    public void volumeDown() {
         if(volume <= 0) {
             System.out.println("최저 음향");
         }
@@ -27,7 +27,7 @@ public class Speaker {
         }
     }
 
-    void showVolume() {
+    public void showVolume() {
         System.out.println("현재 음량 : " + volume);
     }
 }
